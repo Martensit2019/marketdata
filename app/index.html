@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="app__wrapper">
+          <aside class="aside">SideBar</aside>
+          <div class="main">
+            <header class="header">Header</header>
+            <div class="marketdata__wrap">
+              <div class="marketdata">
+                <h2 class="marketdata__title">Market data</h2>
+                <div class="marketdata-content">
+                  <div class="marketdata-content__left">
+                    <div class="marketdata-content__title">Equity</div>
+                    <div class="accordion__inner">
+                      <div class="accordion__item">
+                        <button class="accordion__head" type="button" data-acc>Supported types</button>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li">Common Stock</li>
+                            <li class="accordion__li">Preferred Stock</li>
+                            <li class="accordion__li">REITs</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <button class="accordion__head" type="button" data-acc>Fundamentals</button>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li">Common Stock</li>
+                            <li class="accordion__li">Preferred Stock</li>
+                            <li class="accordion__li">REITs</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btns-box">
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn">DOCS</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn">EQUITIES JSON</button>
+                        <button type="button" class="btns-box__btn">EQUITIES CSV</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn">EXCHANGES JSON</button>
+                        <button type="button" class="btns-box__btn">EXCHANGES CSV</button>
+                      </div>
+                    </div>
+                    <div class="marketdata-content__title">ETF</div>
+                    <div class="btns-box">
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--red">DOCS</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--red">EQUITIES JSON</button>
+                        <button type="button" class="btns-box__btn btns-box__btn--red">EQUITIES CSV</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--red">EXCHANGES JSON</button>
+                        <button type="button" class="btns-box__btn btns-box__btn--red">EXCHANGES CSV</button>
+                      </div>
+                    </div>
+                    <div class="marketdata-content__title">Index</div>
+                    <div class="btns-box">
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--yellow">DOCS</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--yellow">EQUITIES JSON</button>
+                        <button type="button" class="btns-box__btn btns-box__btn--yellow">EQUITIES CSV</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--yellow">EXCHANGES JSON</button>
+                        <button type="button" class="btns-box__btn btns-box__btn--yellow">EXCHANGES CSV</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="marketdata-content__right">
+                    <div class="marketdata-content__title">Forex</div>
+                    <div class="accordion__inner">
+                      <div class="advantages__item">
+                        <button class="accordion__head" type="button" data-acc>Exclusive enpoints</button>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li">/exchange_rate</li>
+                            <li class="accordion__li">/currency_conversion</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btns-box">
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--purple">DOCS</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--purple">PAIRS JSON</button>
+                        <button type="button" class="btns-box__btn btns-box__btn--purple">PAIRS CSV</button>
+                      </div>
+                    </div>
+                    <div class="marketdata-content__title">Crypto</div>
+                    <div class="accordion__inner">
+                      <div class="advantages__item">
+                        <button class="accordion__head" type="button" data-acc>Exclusive enpoints</button>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li">/exchange_rate</li>
+                            <li class="accordion__li">/currency_conversion</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btns-box">
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--blue">DOCS</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--blue">PAIRS JSON</button>
+                        <button type="button" class="btns-box__btn btns-box__btn--blue">PAIRS CSV</button>
+                      </div>
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--blue">EXCHANGES JSON</button>
+                        <button type="button" class="btns-box__btn btns-box__btn--blue">EXCHANGES CSV</button>
+                      </div>
+                    </div>
+                    <div class="marketdata-content__title">Technical indicator</div>
+                    <div class="accordion__inner">
+                      <div class="advantages__item">
+                        <button class="accordion__head" type="button" data-acc>Supported list</button>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li">Chaikin A/D Line <span>(AD)</span></li>
+                            <li class="accordion__li">Chaikin A/D Oscillator <span> (ADOSC)</span></li>
+                            <li class="accordion__li">Average Directional Index <span>(ADX)</span></li>
+                            <li class="accordion__li">Average Directional Movement... <span>(ADXR)</span></li>
+                            <li class="accordion__li">Absolute Price Oscillator <span>(APO)</span></li>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btns-box">
+                      <div class="btns-box__row">
+                        <button type="button" class="btns-box__btn btns-box__btn--grey">DOCS</button>
+                        <button type="button" class="btns-box__btn btns-box__btn--grey">API INTERFACE</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="levelb">
+                <h2 class="levelb__title">Level B</h2>
+                <div class="levelb__descr">
+                  Countries are available with your plan
+                </div>
+                
+                <div class="levelb__box">
+                  <div class="levelb__boxtitle">
+                  Currencies
+                  </div>
+                   <div class="levelb__row">
+                     <div>Forex</div>
+                     <div>Real-time</div>
+                   </div>
+                  <div class="levelb__row">
+                    <div>Cryptocurrencies</div>
+                     <div>Real-time</div>
+                  </div>
+                </div>
+                <div class="levelb__box">
+                  <div class="levelb__boxtitle">
+                    Equities
+                    </div>
+                    <div class="accordion__inner">
+                      <div class="accordion__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>United States of America</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class=" accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Canada</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>India</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Netherlands</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Ireland</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>France</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Portugal</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Ireland</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>UK</div>
+                          <div class="minites">20 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Germany</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Turkey</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Brazil</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Japan</div>
+                          <div class="minites">20 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>China</div>
+                          <div class="minites">30 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Hong Kong</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Switzerland</div>
+                          <div class="minites">30 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>South Korea</div>
+                          <div class="minites">20 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>                     
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Sweden</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Norway</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Denmark</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Finland</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Latvia</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Lithuania</div>
+                          <div>Real-time</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Spain</div>
+                          <div class="minites">15 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="advantages__item">
+                        <div class="accordion__head accordion__head-levelb" data-acc>
+                          <div>Singapore</div>
+                          <div class="minites">20 min</div>
+                          </div>
+                        <div class="accordion__content">
+                          <ul class="accordion__ul">
+                            <li class="accordion__li accordion__li--levelb">TSX</li>
+                            <li class="accordion__li accordion__li--levelb">TSXV</li>
+                            <li class="accordion__li accordion__li--levelb">NEO</li>
+                            <li class="accordion__li accordion__li--levelb">CSE</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
